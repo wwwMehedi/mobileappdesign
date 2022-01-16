@@ -2,129 +2,164 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="images/apple-touch-startup-image-640x1096.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous">
-    </script>
+  <style>
+    h2 {
+      color: #60BC52;
+      font-family: 'Source Sans Pro', sans-serif;
+      font-weight: normal;
+    }
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
-    <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="images/apple-touch-startup-image-640x1096.png">
+    h4 {
+      font-size: 12px;
+      color: #60BC52;
+    }
 
-    <!--Css style starts here-->
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="css/themes/default/jquery.mobile-1.5.0-rc1.css">
-    <link type="text/css" rel="stylesheet" href="style.css" />
-    <link type="text/css" rel="stylesheet" href="css/colors/color.css" />
+    .iconcolor {
+      color: #60BC52;
+    }
 
+    .ptext {
+      font-size: 12px;
+    }
 
-    <!--Css style ends here-->
+    .img-resizes {
+      width: 70px;
 
-    <!--Javascript Library Starts here-->
-    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile-1.5.0-rc1.min.js"></script>
-    <script type="text/javascript" src="js/common/app.js"></script>
+    }
 
-    <!--Javascript Library Ends here-->
-
-    <style>
-        h3 {
-            font-size: 16px;
-            color: #60BC52;
-            font-family: 'Source Sans Pro', sans-serif;
-        }
-        
-        h4 {
-            font-size: 12px;
-            color: #60BC52;
-        }
-        
-        .iconcolor {
-            color: #60BC52;
-        }
-        
-        .ptext {
-            font-size: 12px;
-        }
-        
-        .footer {
-            clear: both;
-            position: fixed;
-            background-color: #60BC52;
-            bottom: 0px;
-            text-align: right;
-            width: 90%;
-            right: 5%;
-            left: 5%;
-        }
-    </style>
+    .footer {
+      clear: both;
+      position: fixed;
+      background-color: #60BC52;
+      bottom: 0px;
+      text-align: right;
+      width: 90%;
+      right: 5%;
+      left: 5%;
+    }
+  </style>
 </head>
 
 <!-- <body onload="showLoader();"> -->
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #60BC52;">
-        <div class="container-fluid">
-            <div class="mx-auto">This is header </div>
+  <nav class="py-4 navbar navbar-expand-lg navbar-light" style="background-color: #60BC52;">
+    <div class="container-fluid">
+      <div class="mx-auto">This is header </div>
+
+    </div>
+  </nav>
+
+  <div class="section">
+    <div class="container-fluid">
+
+      <div class="row px-5 mt-3">
+        <div class="col mt-5">
+          <h2 class="text-center">What do you want to do today</h2>
+        </div>
+      </div>
+
+      <div class="row px-5">
+        <div class="col p-2">
+          <div class="d-flex justify-content-evenly">
+            <div class="d-flex flex-column px-3"><img src="img/recharge.png" alt="Avatar" class="img-resizes">
+              <div>
+                <p>RECHARGE</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column px-3">
+              <div class="ms-2" style="overflow-x: hidden;"><img src="img/scan.png" alt="Avatar" class="img-resizes">
+              </div>
+              <div>
+                <p>SCAN & PAY</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row px-5">
+        <div class="col p-2">
+          <div class="d-flex justify-content-evenly">
+            <div class="d-flex flex-column px-3"><img src="img/sends.png" alt="Avatar" class="img-resizes">
+              <div>
+                <p class="ps-3">SEND</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column px-3"><img src="img/requests.png" alt="Avatar" class="img-resizes">
+              <div>
+                <p>REQUEST</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row px-5">
+        <div class="col p-2">
+          <div class="d-flex justify-content-evenly">
+            <div class="d-flex flex-column px-3"><img src="img/shops.png" alt="Avatar" class="img-resizes">
+              <div>
+                <p class="ps-3">SHOPPING</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column px-3 invisible"><img src="img/shoppings.png" alt="Avatar"
+                class="img-resizes">
+              <div>
+                <p class="ps-3"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <section class="footer rounded-pill mb-3">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <div class="d-flex justify-content-between mt-3 mx-3">
+            <div class="d-flex flex-column text-center">
+              <div>
+                <img src="./img/profiles.png" alt="" width="44" height="44">
+              </div>
+              <div>
+                <p class="text-light" style="font-weight: normal; font-size: 14px;">PROFILE</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column text-center">
+              <div>
+                <img src="./img/revarrows.png" alt="" width="44" height="44">
+              </div>
+              <div>
+                <p class="text-light" style="font-weight: normal; font-size: 14px;">MOUVEMENTS</p>
+              </div>
+            </div>
+            <div class="d-flex flex-column text-center">
+              <div>
+                <img src="./img/myhubs.png" alt="" width="44" height="44">
+              </div>
+              <div>
+                <p class="text-light" style="font-weight: normal; font-size: 14px;">HUB</p>
+              </div>
+            </div>
+
+          </div>
 
         </div>
-    </nav>
-
-    <div class="section ">
-        <div class="container">
-
-            <div class="row px-5 mt-5">
-                <div class="col mt-5">
-                    <h3 class="text-center">What do you want to do today</h3>
-                </div>
-            </div>
-            <div class="row px-5">
-                <div class="col p-2">
-                    <div class="d-flex justify-content-end">
-                        <div class="d-flex flex-column px-3"><i class="ms-3 fa fa-refresh fa-3x iconcolor" aria-hidden="true"></i>RECHARGE</div>
-                    </div>
-
-                </div>
-                <div class="col p-2">
-                    <div class="d-flex justify-content-start">
-                        <div class="d-flex flex-column px-3"><i class="ms-3 fa fa-refresh fa-3x iconcolor" aria-hidden="true"></i>RECHARGE</div>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt-5">
-                <div class="col">
-                    <div class="d-flex justify-content-end">
-                        <div class="d-flex flex-column px-3"><i class="ms-3 fa fa-refresh fa-3x iconcolor" aria-hidden="true"></i>RECHARGE</div>
-                    </div>
-
-                </div>
-                <div class="col ">
-                    <div class="d-flex justify-content-start">
-                        <div class="d-flex flex-column px-3"><i class="ms-3 fa fa-refresh fa-3x iconcolor" aria-hidden="true"></i>RECHARGE</div>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+      </div>
+    </div>
     </div>
 
-
-    <section class="footer">
-        <div class="text-center">This is footer </div>
-    </section>
+  </section>
 
 
 
